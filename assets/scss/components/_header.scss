@@ -1,0 +1,159 @@
+.header {
+  width: 100%;
+  padding: 16px 0;
+  position: absolute;
+  background: transparent;
+  z-index: 10;
+
+  .container {
+    height: 100%;
+    .row {
+      height: 100%;
+      justify-content: space-between;
+      align-items: center;
+      .logo {
+        color: #c4cfde;
+        border: 1px solid #c4cfde;
+        text-align: center;
+        font-size: 23px;
+        font-weight: 400;
+        line-height: 40px;
+        width: 40px;
+        height: 40px;
+        span {
+          color: #ff014f;
+        }
+      }
+      .nav-bar {
+        .nav-list {
+          width: 100%;
+          display: flex;
+          gap: 50px;
+          .nav-item {
+            a {
+              position: relative;
+              color: #bdb9b9;
+              transition: 0.3s;
+              font-size: 14px;
+              transition: 0.5s ease;
+              position: relative;
+              &::after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 2px;
+                background: #ff014f;
+                transform: scaleX(0);
+                transform-origin: right center;
+                transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+              }
+              &:hover {
+                color: #fff;
+                &::after {
+                  transition-duration: 0.4s;
+                  transform: scaleX(1);
+                  transform-origin: left center;
+                }
+              }
+            }
+          }
+        }
+      }
+      .private-menu {
+        width: 43px;
+        height: 43px;
+        border-radius: 50%;
+        // overflow: hidden;
+        position: relative;
+        .profile-photo {
+          cursor: pointer;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 50%;
+        }
+        .sub-menu-wrap {
+          position: absolute;
+          top: 100%;
+          right: -50px;
+          width: 280px;
+          transition: max-height 0.5s;
+          background-color: rgba(47, 50, 54, 0.8705882353);
+          border-radius: 10px;
+          padding: 15px;
+          margin: 10px;
+          transform: scaley(0);
+          transform-origin: top center;
+          transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+          .top {
+            width: 100%;
+            display: flex;
+            img {
+              width: 50px;
+              height: 50px;
+              border-radius: 50%;
+              margin-right: 50px;
+            }
+            .title {
+              color: #fff;
+              font-size: 18px;
+              font-weight: 400;
+            }
+          }
+          hr {
+            border: 0;
+            height: 0.5px;
+            width: 95%;
+            background-color: #ccc;
+            margin: 15px auto 10px;
+          }
+          .botom {
+            .sub-list {
+              .sub-item {
+                a {
+                  display: flex;
+                  align-items: center;
+                  color: #525252;
+                  margin: 10px 0;
+                  i {
+                    color: #ff014f;
+                    width: 40px;
+                    border-radius: 50%;
+                    padding: 10px;
+                    margin-right: 5px;
+                  }
+                  p {
+                    color: #bdb9b9;
+                    font-size: 14px;
+                    width: 100%;
+                  }
+                  span {
+                    color: #bdb9b9;
+                    font-size: 18px;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .active {
+          display: block;
+          transform: scaley(1);
+          transform-origin: top center;
+        }
+      }
+    }
+  }
+}
+.drop-header {
+  position: fixed;
+  background-color: rgba(33, 36, 40, 0.8705882353);
+  box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: saturate(180%) blur(15px);
+  padding: 5px 0;
+  transition: 0.3s all ease-out;
+  z-index: 999;
+}

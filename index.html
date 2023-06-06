@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Aos Css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Aos Css -->
+    <!-- Swiper Css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <!-- Swiper Css -->
+    <!-- My Css -->
+    <link rel="stylesheet" href="./assets/scss/main.css" />
+    <!-- My Css -->
+    <title>PORTFOLIO</title>
+  </head>
+  <body>
+    <!-- Start Header Section -->
+    <header class="header" data-aos="fade-down" data-aos-duration="1000">
+      <div class="container">
+        <div class="row">
+          <a class="logo" href="#">S<span>A</span></a>
+          <nav class="nav-bar">
+            <ul class="nav-list">
+              <li class="nav-item"><a href="#home">Home</a></li>
+              <li class="nav-item"><a href="#about-me">About Me</a></li>
+              <li class="nav-item"><a href="#project">Projects</a></li>
+              <li class="nav-item"><a href="#faq">Faq</a></li>
+              <li class="nav-item"><a href="#contact">Contact</a></li>
+              <li class="nav-item"><a href="#news">News</a></li>
+            </ul>
+          </nav>
+          <div class="private-menu" onclick="openMenu()">
+            <img
+              src="./assets/images/profile-img.png"
+              alt="profil-img"
+              class="profile-photo"
+            />
+            <div class="sub-menu-wrap">
+              <div class="top">
+                <img src="./assets/images/profile-img.png" alt="profil-img" />
+                <h2 class="title">Sadiq Abdulllayev</h2>
+              </div>
+              <hr />
+              <div class="botom">
+                <ul class="sub-list">
+                  <li class="sub-item">
+                    <a href="#contact" class="sub-menu-link">
+                      <i class="fa-solid fa-user"></i>
+                      <p>Edit Profile</p>
+                      <span>&gt;</span>
+                    </a>
+                  </li>
+                  <li class="sub-item">
+                    <a href="#" class="sub-menu-link">
+                      <i class="fa-solid fa-gear"></i>
+                      <p>Settings &amp; Privacy</p>
+                      <span>&gt;</span>
+                    </a>
+                  </li>
+                  <li class="sub-item">
+                    <a href="#about-me" class="sub-menu-link">
+                      <i class="fa-solid fa-circle-question"></i>
+                      <p>Help &amp; Support</p>
+                      <span>&gt;</span>
+                    </a>
+                  </li>
+
+                  <li class="sub-item">
+                    <a href="#" class="sub-menu-link">
+                      <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                      <p>Logout</p>
+                      <span>&gt;</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- End Header Section -->
+
+    <main>
+      <div class="overlay-toggle"></div>
+      <!-- Start Home Section -->
+      <section class="home" id="home">
+        <div class="overlay-hero"></div>
+        <div class="container">
+          <div class="row">
+            <div class="info" data-aos="zoom-in-up" data-aos-duration="1000">
+              <h1 class="title">
+                I'm <span id="name"></span> A Front-end Developer
+              </h1>
+              <p class="text">
+                First template with <span id="name">Javascript</span>
+              </p>
+              <div class="btn"><a href="#project"> Read More</a></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Home Section -->
+
+      <!-- Start Marquee Section -->
+      <div class="marquee">
+        <ul class="marquee-content">
+          <li><i class="fa-regular fa-circle-check"></i> 15+ repository</li>
+          <li><i class="fa-regular fa-circle-check"></i>Completed Projects</li>
+          <li><i class="fa-regular fa-circle-check"></i>1 year practice</li>
+          <li><i class="fa-regular fa-circle-check"></i>Freelance work</li>
+          <li><i class="fa-regular fa-circle-check"></i>Remote work</li>
+          <li><i class="fa-regular fa-circle-check"></i>Satisfied Clients</li>
+          <li><i class="fa-regular fa-circle-check"></i>1 year practice</li>
+          <li>
+            <i class="fa-regular fa-circle-check"></i>HTML, CSS and Javascript
+          </li>
+          <li><i class="fa-regular fa-circle-check"></i>Responsive design</li>
+          <li><i class="fa-regular fa-circle-check"></i>2 year practice</li>
+        </ul>
+      </div>
+      <!-- Start Marquee Section  -->
+
+      <!-- Start About Me Section -->
+      <section class="about-me" id="about-me">
+        <div class="container">
+          <div class="row">
+            <div
+              class="left-side"
+              data-aos="fade-down"
+              data-aos-duration="1000"
+            >
+              <img src="./assets/images/about-me.jpg" alt="" />
+            </div>
+            <div
+              class="right-side"
+              data-aos="fade-down"
+              data-aos-duration="1000"
+            >
+              <h5 class="info">VISIT MY PORTFOLIO & HIRE ME</h5>
+              <h3 class="title">About Me</h3>
+              <p class="text">
+                Far far away, behind the word mountains, far from the countries
+                Vokalia and Consonantia, there live the blind texts. Separated
+                they live in Bookmarksgrove right at the coast of the Semantics,
+                a large language ocean. A small river named Duden flows by their
+                place and supplies it with the necessary regelialia. It is a
+                paradisematic country, in which roasted parts of sentences fly
+                into your mouth.
+              </p>
+              <div class="tab-title">
+                <p
+                  class="title-link active-link"
+                  onclick="openTab(event, 'skills')"
+                >
+                  Skills
+                </p>
+                <p class="title-link" onclick="openTab(event, 'experience')">
+                  Experience
+                </p>
+                <p class="title-link" onclick="openTab(event, 'education')">
+                  Education
+                </p>
+              </div>
+              <div class="tab-content active" id="skills">
+                <ul class="tab-list">
+                  <li class="tab-item">
+                    <span>Front-End </span>Creating Web interfaces
+                  </li>
+                  <li class="tab-item">
+                    <span>Web Development </span>Creating Web interfaces
+                  </li>
+                  <li class="tab-item">
+                    <span>App Development </span>Creating Web interfaces
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-content" id="experience">
+                <ul class="tab-list">
+                  <li class="tab-item">
+                    <span>2022 - Current </span>Front-end programming course
+                  </li>
+                  <li class="tab-item">
+                    <span>2021 - 2022 </span>Online programming courses
+                  </li>
+                  <li class="tab-item">
+                    <span>2020 - 2021 </span>Self-study with various video
+                    lessons
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-content" id="education">
+                <ul class="tab-list">
+                  <li class="tab-item">
+                    <span>2022 - 2023</span>Texnoera Academy
+                  </li>
+                  <li class="tab-item">
+                    <span>2020 - Current</span>Azerbaijan State University of
+                    Economics
+                  </li>
+                  <li class="tab-item">
+                    <span>2009 - 2020</span>High School with Foreign Languages
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End About Me Section -->
+
+      <!-- Start Project Slider Section -->
+      <section class="slider" id="faq">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </section>
+      <!-- End Project Slider Section -->
+
+      <!-- Start Quetion Section -->
+      <section class="quetion" id="news">
+        <div class="container">
+          <div class="row">
+            <div class="left-side">
+              <h5 class="info">
+                CHECK OUT OUR FAQ SECTION TO SEE IF WE CAN HELP.
+              </h5>
+              <h3 class="title">Do you have any Question</h3>
+              <div
+                class="accordion"
+                data-aos="fade-down"
+                data-aos-duration="1000"
+              >
+                <div class="content-box">
+                  <div class="label">1. What is Inbio ? How does it work?</div>
+                  <div class="content">
+                    <p>
+                      Welcome to Inbio Personal Portfolio WordPress Theme. It
+                      works too much faster loading speed and you can works too
+                      much comfortability. Inbio create your website so much
+                      faster, use to use and Well Documented Codes for your
+                      customization.
+                    </p>
+                  </div>
+                </div>
+                <div class="content-box">
+                  <div class="label">2. Is Inbio theme installation easy?</div>
+                  <div class="content">
+                    <p>
+                      Yes, we have one-click demo installation feature,
+                      therefore installation is very easy. You can see our video
+                      installation tutorial here
+                    </p>
+                  </div>
+                </div>
+                <div class="content-box">
+                  <div class="label">
+                    3. Can I change demo page layouts like delete sections or
+                    add new ones?
+                  </div>
+                  <div class="content">
+                    <p>
+                      Yes, we use drag and drop page builder, therefore you can
+                      add, edit, duplicate our remove any section or element you
+                      want.
+                    </p>
+                  </div>
+                </div>
+                <div class="content-box">
+                  <div class="label">
+                    4. After Inbio purchase, will I have all the demos and its
+                    pages?
+                  </div>
+                  <div class="content">
+                    <p>
+                      Yes, you will be able to install any of our demos and will
+                      have all our pages
+                    </p>
+                  </div>
+                </div>
+                <div class="content-box">
+                  <div class="label">
+                    5. Can I get update regularly and For how long do I get
+                    updates?
+                  </div>
+                  <div class="content">
+                    <p>
+                      Yes, We will get update the Inbio. And you can get it any
+                      time. Next time we will comes with more feature. You can
+                      be get update for life times. Our dedicated team works for
+                      update.
+                    </p>
+                  </div>
+                </div>
+                <div class="content-box">
+                  <div class="label">
+                    6. How can I get the customer support?
+                  </div>
+                  <div class="content">
+                    <p>
+                      After purchasing the product need you any support you can
+                      be share with us with create support ticket here:
+                      https://support.rainbowit.net/support/login Our support
+                      team will contact with you soon
+                    </p>
+                  </div>
+                </div>
+                <div class="content-box">
+                  <div class="label">
+                    7. How can I leave a feedback for the future improvements?
+                  </div>
+                  <div class="content">
+                    <p>
+                      Please reach us at
+                      https://themeforest.net/user/rainbow-themes/portfolio for
+                      feedbacks.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="right-side">
+              <div class="top" data-aos="flip-right" data-aos-duration="1000">
+                <div class="icon"><i class="fa-solid fa-book"></i></div>
+                <h4 class="title">Online Documentation</h4>
+                <p class="description">Well organized and up to date</p>
+                <div class="btn">
+                  <a href="#home">Online Documentation</a>
+                </div>
+              </div>
+              <div class="botom" data-aos="flip-right" data-aos-duration="1000">
+                <div class="icon"><i class="fa-solid fa-headphones"></i></div>
+                <h4 class="title">Dedicated Support</h4>
+                <p class="description">
+                  Need support ? Submit a ticket. We will be happy to assist
+                  you.
+                </p>
+                <div class="btn">
+                  <a href="#home">Get Support</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Quetion Section -->
+
+      <!-- Start My Projects Section -->
+      <section class="my-project" id="project">
+        <div class="container">
+          <div class="row">
+            <div class="info-box"></div>
+          </div>
+        </div>
+      </section>
+      <!-- End My Projects Section -->
+
+      <!-- Start Contact Section -->
+      <section class="contact" id="contact">
+        <div class="container">
+          <div class="row">
+            <div
+              class="left-side"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+            >
+              <div class="top">
+                <img src="./assets/images/contact1.png" alt="contact" />
+              </div>
+              <div class="botom">
+                <h3 class="title">Sadiq Abdullayev</h3>
+                <span class="info">Front-End Developer</span>
+                <p class="text">
+                  I am available for freelance work. Connect with me via and
+                  call in to my account
+                </p>
+                <span class="number"
+                  >Phone: <a href="tel:+994555555555">+994555555555</a></span
+                >
+                <span class="mail"
+                  >Mail:
+                  <a href="mailto:someone@example.com"
+                    >sadiq.abdullayev@gmail.com</a
+                  ></span
+                >
+                <span class="social-title">FIND WITH ME</span>
+                <ul class="social-list">
+                  <li class="social-item">
+                    <a href="https://www.facebook.com/" target="_blank"
+                      ><i class="fa-brands fa-facebook-f"></i
+                    ></a>
+                  </li>
+                  <li class="social-item">
+                    <a href="https://twitter.com/" target="_blank"
+                      ><i class="fa-brands fa-twitter"></i
+                    ></a>
+                  </li>
+                  <li class="social-item">
+                    <a
+                      href="https://www.linkedin.com/?original_referer="
+                      target="_blank"
+                      ><i class="fa-brands fa-linkedin-in"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="right-side"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+            >
+              <form id="registration-form">
+                <div class="general-info">
+                  <div class="form-group">
+                    <label for="firstname">Ad</label>
+                    <input type="text" id="firstname" name="name" />
+                    <div id="name-error" class="error-message"></div>
+                  </div>
+                  <div class="form-group">
+                    <label for="surname">Soyad</label>
+                    <input type="text" id="surname" name="surname" />
+                    <div id="surname-error" class="error-message"></div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="email">Elektron poçt</label>
+                  <input type="email" id="email" name="email" />
+                  <div id="email-error" class="error-message"></div>
+                </div>
+                <div class="form-group">
+                  <label for="textarea">Metn</label>
+                  <textarea
+                    name="textarea"
+                    id="textarea"
+                    cols="30"
+                    rows="10"
+                  ></textarea>
+                  <div id="text-error" class="error-message"></div>
+                </div>
+                <button type="submit" class="btn">SEND MESSAGE</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Contact Section -->
+    </main>
+
+    <!-- Start Footer Section -->
+    <footer class="footer">
+      <div class="container">
+        <div>© <span class="year"></span> All rights reserved</div>
+      </div>
+    </footer>
+    <!-- End Footer Section -->
+    <!-- Font Awerasome -->
+    <script
+      src="https://kit.fontawesome.com/ce93928e17.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Font Awerasome -->
+    <!-- Aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- Aos -->
+    <!-- SweetAlert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- SweetAlert -->
+
+    <!-- Swiper JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- Swiper JavaScript -->
+
+    <!-- My JavaScript -->
+    <script src="./assets/js/app.js"></script>
+    <!-- My JavaScript -->
+  </body>
+</html>
